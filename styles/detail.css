@@ -2,13 +2,35 @@
     height: 60px;
     width: 60px;
 }
-
-.maindiv{
-    height: fit-content;
-    width: fit-content;
+header{
+    background-color: rosybrown;
 }
 
-.div_content{
-    height: fit-content;
-    width: fit-content;
+footer{
+    background-color: rosybrown;
+
+}
+footer p{
+    margin: 0;
+}
+body{
+    margin: 0;
+    background-color: #e0e0e0;
+}
+.one { 
+    margin-top: 2%;  
+    margin-left: 4%;  
+    margin-right: 4%; 
+}  
+.two { 
+    margin-top: 0; 
+    margin-left: 4%; 
+    margin-right: 4%; 
+    margin-bottom: 1%; 
+}  
+.three { 
+    margin-top: 1%; 
+    margin-left: 4%; 
+    margin-right: 4%;  
+    margin-bottom: 2%; 
 }

@@ -1,51 +1,78 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-        <title></title>
-        <link rel="stylesheet" href="styles/index.css">
-    </head>
-    <body>
-        <div class="maindiv">
-            <header>
-            <div>
-                <img id="logo" src="assests\images\logo.png" alt="logo">
-                <a href="login.html">Login</a><br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="maindiv">
+        <header>
+            <div id="head">
+                <div>
+                    <img id="logo" src="assests\images\logo.png" alt="logo">
+                </div>
+                <div class="login">
+                    <a href="login.html">Login</a><br>
+                </div>
             </div>
-            </header>
-            <div id="content">
-                <div class="search">
+        </header>
+        <div class="container">
+            <div class="searchbar">
+                <form>
                     <input type="text" placeholder="City" name="search bar">
-                </div>
-                <div class="first">
-                    <div>
+                </form>
+            </div>
+            <div id="first">
+                <div>
+                    <div class="content_img">
                     <a href="list.html">
-                    <img  src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi"></a>
-                    <img  src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="Goa">
-                    <img  src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="Charminar">
-                    <img  src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkata-calcutta">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
+                            class="delhi" data-hover="Delhi">
+                    </a>
+                    <div class="overlay">
+                        <div class="text">
+                            Delhi
+                        </div>
+                    </div>
+                </div>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
                 </div>
             </div>
 
-                    <br>
-                    <div><a href="#">View more >></a></div>
-                    
-
-                
-                </div>
-           
-            <footer>
-            <div>
-                <a href="G:\Hotel_Booking_Website_Starter_Code\contact.html">CONTACT US</a>
-                <br>
-                <a href="https://www.facebook.com" target="_blank"><img src="assests\images\facebook.png" style="height : 20px; width : 22px;"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests\images\instagram.png" style="height : 20px; width : 22px;"></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests\images\twitter.png" style="height : 20px; width : 22px;"></a>
-                <p>&#169; 2020 SEARCH ROOM PVT. LTD.</p>
+            <div class="view_more">
+                <a href="index.html">View more >></a>
             </div>
-            </footer>
         </div>
-    </body>
+    </div>
+
+    <footer>
+        <div id="footer_main">
+
+            <div class="contact">
+                <a href="contact.html" target="_blank">Contact Us</a>
+            </div>
+
+            <div class="copyright">
+                <p> &#169; 2020 SEARCH ROOM PVT. LTD.</p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"></a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="assests/images/twitter.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
 </html>

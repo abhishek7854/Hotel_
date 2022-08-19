@@ -1,96 +1,74 @@
-#logo{
-    height: 60px;
-    width: 60px;
-    float: left;
-    vertical-align: middle;
-    
-}
 * { 
     margin: 0;  
-    font-family:  'Ubuntu', sans-serif; 
-} 
-body{
-    margin: 0;
-    background-color: #e0e0e0;
-}
-header{
-    position: fixed;
-    /* display: flexbox; */
-    height: auto;
-    margin: auto 0;
-    top: 0;
-    background-color: rosybrown;
-    margin: 0;
-    position: sticky;
-    background-attachment: fixed;
-    vertical-align: middle;
-}
-.login{
-    padding: 1.3em; 
-    vertical-align: middle;
+    font-family:  'Ubuntu', sans-serif;   
     
-}
-.login a{
-    text-decoration: none; 
-    color: black; 
-    float: right;
-}
-footer{ 
-    position: fixed; 
-    width: 100%;
-    margin: auto 0; 
-    bottom: 0; 
-    padding: 1%; 
-    background-color: rosybrown;  
-    background-attachment: fixed; 
-    display: flexbox;
-}
-#footer_main { 
-    justify-content: center; 
-    align-items: center;  
-    display: flex;  
-    justify-content: space-between;
-    background-color: rosybrown; 
-}  
-.copyright { 
-margin-left: 20%;  
-padding-left: 9%; 
-font-size: 10px;  
-font-weight: 400; 
-
-}   
-.social { 
-margin-left: 20%; 
-margin-inline-end: 0;  
-padding-left: 10%; 
- 
-}  
-.contact { 
-margin-left: 2%; 
-margin:0;  
-padding-left:2%;    
-
-}  
-.contact a { 
-text-decoration: none; 
-color: black; 
-}
+} 
+body{ 
+    margin: 0;  
+    background-color: #e0e0e0;   
+    overflow-x: hidden; 
+} 
 .social img { 
     height: 20px; 
-    width: 22px;
-}
-
-.search{
-    height: 380px;
-    background-image: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    width: 22px; 
+}  
+header #head { 
+    background-color: rosybrown;   
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;  
+    padding-left: 1%;  
+     
+     
+}  
+header { 
+    position: fixed; 
+    margin: auto 0; 
+    top: 0; 
+    background-color: rosybrown; 
+    margin: 0; 
+    position: sticky; 
+    background-attachment: fixed; 
+}     
+#head{ 
+    height: 60px; 
+    width: 100%; 
+}   
+ 
+.header_login a { 
+    text-decoration: none; 
+    color: black;  
+}   
+.header_login{ 
+    padding-right: 2%;  
+    padding-top: 1em;  
+} 
+ 
+.container { 
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");  
+    height: 380px;   
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-size: cover;    
+    display: flex; 
+    align-items: center; 
+    justify-content: center;   
+    width: 100%;   
+        
+}   
+.container form  { 
+    background-color: #f1f1f1; 
+    width: 29%; 
+    border-radius: 12px ;  
+}  
+.container form input{  
+    border: 1px solid transparent; 
+    border-radius: 12px; 
+    padding: 10px;  
+    width: 100%;  
+    font-size: 16px;  
+    outline: none; 
+}   
  
 #first img{ 
     height: 150px; 
@@ -109,68 +87,96 @@ color: black;
     align-items: center;  
     position: relative; 
  
-}
-.viewmore {
-    text-align: center;
-    display:inline-block;
-    text-decoration: none;
-    width: 100%;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-}  
-
-.searchbar { 
-    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");  
-    height: 380px;   
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-size: cover;   
-    width: 100%;  
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-}
-.searchbar form { 
-    background-color: #f1f1f1; 
-    width: 29%; 
-    border-radius: 12px; 
- 
-     
-}  
-.searchbar form input{  
-    border: 1px solid transparent; 
-    border-radius: 12px; 
-    padding: 10px;  
-    width: 100%;  
-    font-size: 16px;  
-    outline: none;
-}
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    width: 150px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: grey;
-  }
-  /* .content_img:hover .overlay {
-    opacity: 1;
-    border-radius: 25px;
-  } */
-
-  .content_img a img { 
+}    
+.content_img a img { 
     display: block; 
     height: 150px; 
     width: 150px; 
-}
-.text {
-    color: white;
-    position: relative ;
-    display: flex;
-    justify-content: center;
+}  
+.content_img :hover .overlay { 
+    opacity: 0.5; 
+  }  
+ 
+.overlay { 
+ position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 150px; 
+  width: 150px; 
+  opacity: 0; 
+  transition: .5s ease; 
+  background-color: grey ;  
+  border-radius: 25px; 
+}  
+.text { 
+    position:relative; 
+    text-align: center; 
+    justify-content: center; 
+    margin-top: 45%;  
+    color: white; 
+} 
+   
+.view_more a { 
+    text-align: center; 
+    display:inline-block; 
+    text-decoration: none; 
+    width: 100%; 
+    align-items: center; 
+    text-decoration: none; 
+    color: black;  
+   padding: 1em;  
+   padding-top: 3em;  
+   padding-bottom: 3em; 
+   justify-content: center; 
+}   
+ 
+/* Footer div*/   
+ 
+ 
+    footer{ 
+        position: fixed; 
+        margin: auto 0; 
+        width: 100%;
+        bottom: 0; 
+        padding: 1%; 
+        background-color: rosybrown;  
+        background-attachment: fixed;   
+        display: flexbox; 
+    }   
+   
+ 
+   #footer_main { 
+        justify-content: center; 
+        align-items: center;  
+        display: flex;  
+        justify-content: space-between; 
+    }  
+  .copyright { 
+    margin-left: 28%;  
+    padding-left: 9%; 
+    font-size: 10px;  
+    font-weight: 400; 
+    text-align: center;
+  
+  }   
+  .social { 
+    margin-left: 18%; 
+    margin-right: 2%; 
+    padding-right: 1%;
+    margin-inline-end: 0;  
+    padding-left: 15%; 
+     
+  }  
+  .contact { 
+    margin-left: 2%; 
+    margin:0;  
+    padding-left:1%;
+    text-align: center;    
+ 
+  }  
+  .contact a { 
+    text-decoration: none; 
+    color: black; 
   }

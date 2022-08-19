@@ -1,66 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-        <title></title>
-        <link rel="stylesheet" href="styles\detail.css">
-    </head>
-    <body>
-        <div class="maindiv">
-            <header>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title></title>
+   <link rel="stylesheet" href="styles/detail.css">
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div id="main">
+      <header>
+         <div id="head">
             <div>
-                <a href="index.html"><img id="logo" src="assests\images\logo.png" alt="logo"></a>
-                <a href="login.html">Login</a>
+               <img src="assests/images/logo.png" alt="logo" height="60px" width="60px">
             </div>
-            </header>
-            <div class="one">
-             
-                    <img style="height: 500px; width: 500px;" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
-                    <br>
+            <div class="header_login">
+               <a href="login.html" target="_blank">Login</a>
             </div>
-                    <div class="two">
-                    <form action="payment.html"> 
-                        <label>Adults:</label>
-                        <input type="number" name="number" placeholder="1" min="1" ><br>
-                        <label>Name:</label> 
-                        <input type="name" name="name" required><br> 
-                        <label for="date">From Date:</label> 
-                        <input type="date" name="date"><br>
-                        <label for="date">To Date:</label> 
-                        <input type="date" name="date"><br> 
-                        <label>Total:</label> 
-                        <input type="number" name="price" disabled> 
-                        <br>
-                       <input type="submit" value="Book Now">
-                       </form>
-                    </div>
-                    <div class="three">
-                    <h2>Radisson Blu Hotel</h2>
-                    <p>RATING</p>
-                    <p>5 Star</p>
-                    <p>AMENITIES</p>
-                    <ul>
-                        <li>Room service</li>
-                        <li>Restaurant</li>
-                        <li>Bussiness center</li>
-                        <li>Fitness center</li>
-                        <li>Pool</li>
-                    </ul>
-                    <h5>DESCRIPTION</h5>
-                    <P>This hotel is one of the best hotel in the New Delhi.This hotel has swiming pool, Gym.</P>
-                </div>
+         </div>
+      </header>
+
+      <!--Content div-->
+      <div id="container">
+
+         <div class="box">
+            <table style="border: 5px; align-items: center;">
+               <tr>
+                  <td style="border: 5px;"><div style="border: 5px;" class="one">
+                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                     <br />
+                  </div>
+                  </td>
+                  <td style="border: 5px;"><div id="two"><form>
+
+                     <table>
+                        <tr>
+                           <td><label>Adults:</label></td>
+                           <td><input type="number" name="number" placeholder="1" min="1"><br></td>
+                        </tr>
+                        <tr>
+                           <td><label>Name:</label></td>
+                           <td><input type="name" name="name" required></td>
+                        </tr>
+                        <tr>
+                           <td><label for="date">From Date:</label></td>
+                           <td><input type="date" name="date"></td>
+                        </tr>
+                        <tr>
+                           <td><label for="date">To Date:</label></td>
+                           <td><input type="date" name="date"></td>
+                        </tr>
+                        <tr>
+                           <td><label>Total:</label></td>
+                           <td><input type="number" name="price" disabled><br></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td><input type="submit" value="Book Now"></td>
+                        </tr>
+                     </table>
+                  </form></div></td>
+               </tr>
+            </table>
+            
+
+               
+            </div>
+         </div>
+         <br>
+
+            <div class="three">
+               <h2>Radisson Blu Hotel</h2>
+               <p>RATING</p>
+               <p>5 Star</p>
+               <p>AMENITIES</p>
+               <ul>
+                  <li>Room service</li>
+                  <li>Restaurant</li>
+                  <li>Business center</li>
+                  <li>Fitness center</li>
+                  <li>Pool</li>
+               </ul>
+               <h5>DESCRIPTION</h5>
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias impedit dolorem ex hic,
+                  accusantium
+                  exercitationem perferendis deserunt magnam iste nobis possimus cum dicta, id ullam sit ratione
+                  inventore
+                  vitae odit.
+               </p>
+            </div>
+
+            <!--Footer-->
+
             <footer>
-                <div>
-                    <a href="contact.html">CONTACT US</a>
-                    <br>
-                    <a href="https://www.facebook.com" target="_blank"><img src="assests\images\facebook.png" style="height: 20px; width: 22px;"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img src="assests\images\instagram.png" style="height: 20px; width: 22px;"></a>
-                    <a href="https://twitter.com" target="_blank"><img src="assests\images\twitter.png" style="height: 20px; width: 22px;"></a>
-                    <p>&#169; 2020 SEARCH ROOM PVT. LTD.</p>
-                </div>
-                </footer>
-        </div>
-    </body>
+               <div id="footer_main">
+
+                  <div class="contact">
+                     <a href="contact.html" target="_blank">Contact Us</a>
+                  </div>
+
+                  <div class="copyright">
+                     <p> &#169; 2020 SEARCH ROOM PVT. LTD.</p>
+                  </div>
+                  <div class="social">
+                     <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"></a>
+                     <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"></a>
+                     <a href="https://twitter.com" target="_blank">
+                        <img src="assests/images/twitter.png">
+                     </a>
+                  </div>
+               </div>
+            </footer>
+
+         </div>
+
+</body>
+
 </html>

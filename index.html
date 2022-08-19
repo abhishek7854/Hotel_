@@ -1,78 +1,122 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title></title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <div class="maindiv">
-        <header>
-            <div id="head">
-                <div>
-                    <img id="logo" src="assests\images\logo.png" alt="logo">
-                </div>
-                <div class="login">
-                    <a href="login.html">Login</a><br>
-                </div>
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+   <meta charset="UTF-8"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" href="styles/index.css"> 
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+ 
+   <!-- CSS only --> 
+   <link rel="stylesheet" href="styles/index.css"> 
+ 
+</head> 
+ 
+<body> 
+   <div id="main"> 
+      <header> 
+         <div id="head"> 
+            <div> 
+               <img src="assests/images/logo.png" alt="logo" height="60px" width="60px"> 
+            </div> 
+            <div class="header_login"> 
+               <a href="login.html" target="_blank">Login</a> 
+            </div> 
+         </div> 
+   </div> 
+   </header> 
+ 
+   <!--Content--> 
+ 
+   <div id="content"> 
+      <div class="container"> 
+         <form> 
+            <input type="text" name="text" placeholder="City"> 
+         </form> 
+      </div> 
+ 
+      <div id="first"> 
+         <div class="content_img"> 
+            <div class="box"> 
+               <a href="list.html" target="_blank"> 
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"> 
+ 
+                  <div class="overlay"> 
+                     <div class="text"> 
+                        Delhi 
+                     </div> 
+                  </div> 
+               </a> 
             </div>
-        </header>
-        <div class="container">
-            <div class="searchbar">
-                <form>
-                    <input type="text" placeholder="City" name="search bar">
-                </form>
-            </div>
-            <div id="first">
-                <div>
-                    <div class="content_img">
-                    <a href="list.html">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg"
-                            class="delhi" data-hover="Delhi">
-                    </a>
-                    <div class="overlay">
-                        <div class="text">
-                            Delhi
-                        </div>
-                    </div>
-                </div>
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
-                </div>
-            </div>
-
-            <div class="view_more">
-                <a href="index.html">View more >></a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div id="footer_main">
-
-            <div class="contact">
-                <a href="contact.html" target="_blank">Contact Us</a>
-            </div>
-
-            <div class="copyright">
-                <p> &#169; 2020 SEARCH ROOM PVT. LTD.</p>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"></a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="assests/images/twitter.png">
-                </a>
-            </div>
-        </div>
-    </footer>
-    </div>
-</body>
-
+            <div class="box"> 
+                <a href="list.html" target="_blank"> 
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg"> 
+  
+                   <div class="overlay"> 
+                      <div class="text"> 
+                         Goa 
+                      </div> 
+                   </div> 
+                </a> 
+             </div> 
+             <div class="box"> 
+                <a href="list.html" target="_blank"> 
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg"> 
+  
+                   <div class="overlay"> 
+                      <div class="text"> 
+                         Charminar 
+                      </div> 
+                   </div> 
+                </a> 
+             </div> 
+             <div class="box"> 
+                <a href="list.html" target="_blank"> 
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"> 
+  
+                   <div class="overlay"> 
+                      <div class="text"> 
+                         Culcutta 
+                      </div> 
+                   </div> 
+                </a> 
+             </div>  
+            
+            
+            
+         </div> 
+      </div> 
+ 
+      <div class="view_more"> 
+         <a href="index.html">View more >></a> 
+      </div> 
+   </div> 
+ 
+ 
+   <!--Footer--> 
+ 
+   <footer> 
+      <div id="footer_main"> 
+ 
+         <div class="contact"> 
+            <a href="contact.html" target="_blank">Contact Us</a> 
+         </div> 
+ 
+         <div class="copyright"> 
+            <p> &#169; 2020 SEARCH ROOM PVT. LTD.</p> 
+         </div> 
+         <div class="social"> 
+            <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png"></a> 
+            <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png"></a> 
+            <a href="https://twitter.com" target="_blank"> 
+               <img src="assests/images/twitter.png"> 
+            </a> 
+         </div> 
+      </div> 
+   </footer> 
+ 
+   </div> 
+ 
+</body> 
+ 
 </html>

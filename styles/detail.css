@@ -1,23 +1,28 @@
 *{ 
     box-sizing: border-box; 
-    font-family:  'Ubuntu', sans-serif; 
+    font-family:  'Ubuntu', sans-serif;
 } 
  
-body{ 
-    background-color: #e0e0e0;  
-    margin: 0; 
+body{
+    margin: 0;
+    background-color: #e0e0e0;
+}   
  
-}    
- 
-/* Header */ 
- 
+/* --------------Header-------------*/
 header #head { 
     background-color: rosybrown;   
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;  
     padding-left: 1%;  
+     
+     
 }  
+.table_td{
+    padding: 10px 20px;             
+    align-items: center; 
+    align-content: center;
+}
 header { 
     position: fixed; 
     margin: auto 0; 
@@ -28,35 +33,78 @@ header {
     background-attachment: fixed; 
 }     
 #head{ 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center; 
+    padding: 0 1%;
     height: 60px; 
     width: 100%; 
 }   
  
-.header_login a { 
+.header_login{ 
     text-decoration: none; 
     color: black;  
-}   
-.header_login{ 
-    padding-right: 2%;  
-    padding-top: 1em;  
-}   
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center; 
+    padding: 0 1%;               
+} 
+ 
 /* Content*/    
+#main{
+    background-color: #e0e0e0; 
+}
+
 #container{ 
-    display: flex; 
-    width: 100%; 
-    max-height: 400px;  
-    border: 1px solid black;  
-    margin : 2%;   
-    max-height: 400px;  
+    width: 100%;
+    background-color: #e0e0e0;  
 } 
 .box { 
-    width: 100%;  
-    border-right: 1px solid black;
-    display: inline-flex;
-    justify-content: center;
-    position: relative;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
 }  
-.one img { 
+.box_one{
+    margin: 1% 12%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+    border-right: 1px solid black;
+
+}
+.box_two{
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+    padding-left: 4%;
+
+}
+.booknow_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+    margin-top: 25px;
+}
+.t_td{
+    padding-right: 30px;
+}
+.t_tr{
+    padding: 10px 0;
+}
+
+.box_one img { 
     max-height: 350px; 
 }  
 .one { 
@@ -97,22 +145,25 @@ input[type = date] {
     margin-left: 4%; 
     margin-right: 4%;  
     margin-bottom: 2%; 
-}    
+} 
+.three p, h5, ul,li{
+    font-family: cursive;
+}   
  
-/*Footer*/   
+/* Footer div*/   
+ 
  
 footer{ 
-    position: fixed; 
     margin: auto 0; 
+    width: 100%;
     bottom: 0; 
     padding: 1%; 
-    background-color: rosybrown; 
-    position: sticky; 
+    background-color: rosybrown;  
     background-attachment: fixed;   
     display: flexbox; 
 }   
- 
- 
+
+
 #footer_main { 
     justify-content: center; 
     align-items: center;  
@@ -124,25 +175,48 @@ margin-left: 28%;
 padding-left: 9%; 
 font-size: 10px;  
 font-weight: 400; 
- 
+text-align: center;
+
 }   
 .social { 
-margin-left: 20%;  
+margin-left: 18%; 
+margin-right: 2%; 
+padding-right: 1%;
 margin-inline-end: 0;  
-padding-left: 20%; 
+padding-left: 15%; 
  
 }  
 .contact { 
 margin-left: 2%; 
 margin:0;  
-padding-left:2%;    
- 
+padding-left:1%;
+text-align: center;
+display: flex;
+justify-content: center;              
+align-items: center; 
+align-content: center;    
+
 }  
 .contact a { 
 text-decoration: none; 
 color: black; 
-}  
+}
 .social img { 
     height: 20px; 
     width: 22px; 
+}
+
+.modal-footer{
+display: flex;
+flex-direction: row;
+justify-content: center;              
+align-items: center; 
+align-content: center;
+}
+.modal-body{
+display: flex;
+/* flex-direction: row;  */
+justify-content: center;              
+align-items: center; 
+align-content: center;
 }

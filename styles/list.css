@@ -1,14 +1,15 @@
 *{ 
     box-sizing: border-box; 
-    font-family:  'Ubuntu', sans-serif; 
+    font-family:  'Ubuntu', sans-serif;
 } 
  
 body{ 
-    background-color: #e0e0e0;  
-    margin: 0; 
- 
+    margin: 0;  
+    background-color: #e0e0e0;   
+    overflow-x: hidden; 
+    width: 100%;
 } 
- 
+/* --------------Header-------------*/
 header #head { 
     background-color: rosybrown;   
     display: flex; 
@@ -18,6 +19,11 @@ header #head {
      
      
 }  
+.table_td{
+    padding: 10px 20px;             
+    align-items: center; 
+    align-content: center;
+}
 header { 
     position: fixed; 
     margin: auto 0; 
@@ -28,17 +34,25 @@ header {
     background-attachment: fixed; 
 }     
 #head{ 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center; 
+    padding: 0 1%;
     height: 60px; 
     width: 100%; 
 }   
  
-.header_login a { 
+.header_login{ 
     text-decoration: none; 
     color: black;  
-}   
-.header_login{ 
-    padding-right: 2%;  
-    padding-top: 1em;  
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;              
+    align-items: center; 
+    align-content: center; 
+    padding: 0 1%;               
 } 
  
 /*content*/  
@@ -46,7 +60,6 @@ header {
 #first img { 
  height: 250px; 
  width: 280px;  
-  
 }   
  #content_box {  
     padding-left: 3em; 
@@ -54,17 +67,27 @@ header {
     flex-wrap: wrap; 
     justify-content: space-between; 
     padding-right: 2em; 
-     
-     
 }  
+.nav_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;              
+    align-items: center; 
+    align-content: center;
+}
+.nav_div a{
+    color: black; text-decoration: none;
+}
  
 .one { 
     margin: 2%; 
     height: 250px; 
     width: 42%;  
     background-color: lightgrey;   
-    display: flex;  
-      
+    display: flex;      
+}
+.one:hover{
+    background-color: rosybrown;
 }   
 .description_1{ 
     padding-left: 1em;  
@@ -75,11 +98,11 @@ header {
     height: 250px; 
     width: 42%;  
     background-color: lightgrey;   
-    display: flex;  
-      
-}   
- 
-  
+    display: flex;    
+}
+.two:hover{
+    background-color: rosybrown;
+}    
 .description_2{ 
     padding-left: 1em;  
     font-size: 20px; 
@@ -91,6 +114,9 @@ header {
     width: 42%;  
     background-color:lightgray;  
     display: flex; 
+} 
+.three:hover{
+    background-color: rosybrown;
 }   
 .description_3{ 
     padding-left: 1em;  
@@ -119,24 +145,24 @@ div ul a{
     text-decoration: none; 
     color: black; 
 }   
-#second { 
-    display: none; 
+#map_view{ 
+    display: contents; 
 }  
  
- /*Footer */    
-  
+ /* Footer div*/   
+ 
+ 
  footer{ 
-    position: fixed; 
     margin: auto 0; 
+    width: 100%;
     bottom: 0; 
     padding: 1%; 
-    background-color: rosybrown; 
-    position: sticky; 
+    background-color: rosybrown;  
     background-attachment: fixed;   
     display: flexbox; 
 }   
- 
- 
+
+
 #footer_main { 
     justify-content: center; 
     align-items: center;  
@@ -148,25 +174,48 @@ margin-left: 28%;
 padding-left: 9%; 
 font-size: 10px;  
 font-weight: 400; 
- 
+text-align: center;
+
 }   
 .social { 
-margin-left: 20%;  
+margin-left: 18%; 
+margin-right: 2%; 
+padding-right: 1%;
 margin-inline-end: 0;  
-padding-left: 20%; 
+padding-left: 15%; 
  
 }  
 .contact { 
 margin-left: 2%; 
 margin:0;  
-padding-left:2%;    
- 
+padding-left:1%;
+text-align: center;
+display: flex;
+justify-content: center;              
+align-items: center; 
+align-content: center;    
+
 }  
 .contact a { 
 text-decoration: none; 
 color: black; 
-}  
+}
 .social img { 
     height: 20px; 
     width: 22px; 
+}
+
+.modal-footer{
+display: flex;
+flex-direction: row;
+justify-content: center;              
+align-items: center; 
+align-content: center;
+}
+.modal-body{
+display: flex;
+/* flex-direction: row;  */
+justify-content: center;              
+align-items: center; 
+align-content: center;
 }

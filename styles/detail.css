@@ -7,7 +7,9 @@ body{
     margin: 0;
     background-color: #e0e0e0;
 }   
- 
+.checked {
+    color: orange;
+  }
 /* --------------Header-------------*/
 header #head { 
     background-color: rosybrown;   
@@ -76,7 +78,6 @@ header {
     justify-content: center;              
     align-items: center; 
     align-content: center;
-    border-right: 1px solid black;
 
 }
 .box_two{

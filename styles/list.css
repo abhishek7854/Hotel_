@@ -2,7 +2,9 @@
     box-sizing: border-box; 
     font-family:  'Ubuntu', sans-serif;
 } 
- 
+.checked {
+    color: orange;
+  }
 body{ 
     margin: 0;  
     background-color: #e0e0e0;   
@@ -159,7 +161,8 @@ div ul a{
     padding: 1%; 
     background-color: rosybrown;  
     background-attachment: fixed;   
-    display: flexbox; 
+    display: flexbox;
+    position: fixed; 
 }   
 
 

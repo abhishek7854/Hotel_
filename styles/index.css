@@ -86,7 +86,7 @@ header {
 }
 .second{
     margin: auto 0;
-    display: flex;
+    /* display: none; */
     flex-direction: row;
     align-items: center;
     align-content: center;
